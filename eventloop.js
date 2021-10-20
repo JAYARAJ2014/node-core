@@ -1,3 +1,4 @@
+// pseudo representation of event loop
 // node myFile.js
 
 const pendingTimers=[];
