@@ -1,0 +1,26 @@
+{
+  "name": "node-core",
+  "version": "1.0.0",
+  "description": "node index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JAYARAJ2014/node-core.git"
+  },
+  "author": "jayarajsivadasan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JAYARAJ2014/node-core/issues"
+  },
+  "homepage": "https://github.com/JAYARAJ2014/node-core#readme",
+  "keywords": [
+    "node",
+    "tutorial"
+  ],
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
