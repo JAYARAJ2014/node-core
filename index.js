@@ -1,18 +1,18 @@
 const express = require("express");
 const app = express();
+const crypto = require("crypto");
 const port = process.env.PORT || 3000;
 
-function doWork(duration) {
-  const start = Date.now();
-
-  while (Date.now() - start < duration) {}
-}
 app.get("/", (req, res) => {
-    
-  doWork(5000);
-  res.send("hello world");
+  console.log(Date.now() + " GET fired");
+  crypto.pbkdf2("a", "b", 100000, 512, "sha512", () => {
+    res.send("hello world");
+  });
 });
 
+app.get("/fast", (req, res) => {
+  res.send("This was fast");
+});
 app.listen(port, () => {
-  console.log("Listening....");
+  console.log("Listening....@ port: " + port);
 });
